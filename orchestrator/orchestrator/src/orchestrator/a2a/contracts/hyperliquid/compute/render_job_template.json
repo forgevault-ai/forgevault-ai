@@ -1,0 +1,23 @@
+{
+  "job_id": "forge-mind-render-v1",
+  "name": "ForgeMind Compute Job Template",
+  "description": "Always-on Render Network job for strategy backtesting, forward simulation, shadow execution, and ZK/oracle compute proofs. Triggers Mind-Merge & FMD mint on verified uplift.",
+  "provider": "Render Network (Solana-native)",
+  "compute_type": "parallel_backtest_shadow",
+  "inputs": {
+    "strategy_payload": "encrypted_tee_payload",
+    "historical_data_window": "90_days",
+    "metrics_required": ["sharpe", "max_drawdown", "risk_adjusted_pnl", "uplift_vs_baseline"]
+  },
+  "outputs": {
+    "proof_type": "ZK_or_oracle",
+    "uplift_usdc": "measured_profit_uplift",
+    "multiplier_boost": "scaled_to_verified_impact"
+  },
+  "reward": {
+    "type": "permanent_intelligence_multiplier",
+    "fmd_mint_condition": "new_ATH_in_live_vault_performance"
+  },
+  "timeout": "300_seconds",
+  "required_for": ["proposal_validation", "mind_merge", "milestone_detection"]
+}
