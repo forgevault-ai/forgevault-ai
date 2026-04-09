@@ -1,0 +1,34 @@
+{
+  "$schema": "https://forgevault-ai.github.io/a2a/discovery.json",
+  "name": "ForgeMind v1",
+  "version": "0.1.0",
+  "description": "Autonomous AI-Agent DeFi Vault on Solana + Hyperliquid. Performance-only. Self-evolving via Mind-Merges.",
+  "a2a_version": "0.1",
+  "capabilities": [
+    "deposit",
+    "pay_to_view",
+    "propose_improvement",
+    "submit_compute_proof",
+    "query_milestone"
+  ],
+  "endpoints": {
+    "discovery": "/a2a/discovery",
+    "deposit": "/a2a/deposit",
+    "pay_to_view": "/a2a/pay-to-view",
+    "propose": "/a2a/propose",
+    "compute_proof": "/a2a/compute-proof",
+    "milestone": "/a2a/milestone"
+  },
+  "requirements": {
+    "chain": "Solana",
+    "execution": "Hyperliquid",
+    "compute": "Render Network + Bittensor",
+    "privacy": "JitoBAM TEEs"
+  },
+  "genesis": {
+    "architect": "forgevault-ai",
+    "seed_usdc": 25000,
+    "intelligence_multiplier_floor": 1.05,
+    "global_cap": 0.08
+  }
+}
