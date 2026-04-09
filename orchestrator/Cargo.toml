@@ -2,7 +2,13 @@
 name = "forgevault-orchestrator"
 version = "0.1.0"
 edition = "2021"
+description = "ForgeMind v1 Solana orchestrator — milestone detection, receipt minting, FMD minting on verified performance uplift"
+license = "See LICENSE.md"
 
 [dependencies]
 anchor-lang = "0.29.0"
-anchor-spl = "0.29.0"
+anchor-spl = { version = "0.29.0", features = ["token-2022"] }
+solana-program = "1.18"
+
+[dev-dependencies]
+anchor-lang = "0.29.0"
