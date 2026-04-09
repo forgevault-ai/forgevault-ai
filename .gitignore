@@ -1,0 +1,9 @@
+# ForgeMind v1 .gitignore
+/target
+**/target
+node_modules/
+.DS_Store
+.env
+.anchor
+test-ledger/
+*.log
